@@ -10,7 +10,7 @@ const chainMaker = {
     return this.links.length;
   },
   addLink(value) {
-    const linkStr = `( ${value !== undefined ? String(value) : ""})`;
+    const linkStr = `( ${value !== undefined ? String(value) : ""} )`;
     this.links.push(linkStr);
     return this;
   },

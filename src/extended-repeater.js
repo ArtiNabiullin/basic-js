@@ -18,7 +18,7 @@ const { NotImplementedError } = require("../lib");
 
 function repeater(str, options) {
   const mainStr = String(str);
-  const separator = options.separator ?? ".";
+  const separator = options.separator ?? "+";
   const additionSeparator = options.additionSeparator ?? "|";
   const repeatTimes = options.repeatTimes ?? 1;
   const additionRepeatTimes = options.additionRepeatTimes ?? 1;
