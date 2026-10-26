@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../lib');
+const { NotImplementedError } = require("../lib");
 
 /**
  * Given matrix, a rectangular matrix of integers,
@@ -21,11 +21,10 @@ function getMatrixElementsSum(matrix) {
   const rows = matrix.length;
   const cols = matrix[0].length;
 
-
-  for(let i = 0; i < cols; i += 1) {
+  for (let i = 0; i < cols; i += 1) {
     for (let j = 0; j < rows; j += 1) {
       if (matrix[j][i] === 0) {
-        break
+        break;
       }
       sum += matrix[j][i];
     }
@@ -34,5 +33,5 @@ function getMatrixElementsSum(matrix) {
 }
 
 module.exports = {
-  getMatrixElementsSum
+  getMatrixElementsSum,
 };
